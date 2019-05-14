@@ -1,0 +1,56 @@
+/* Feel free to update this file as necessary. */
+
+.beam-brush-blue {
+  background-color: $beam-brush-blue;
+}
+
+.beam-brush-pink {
+  background-color: $beam-brush-pink;
+}
+
+.beam-brush-chartreuse {
+  background-color: $beam-brush-chartreuse;
+}
+
+.beam-font-color {
+  color: $beam-font-color;
+}
+
+.beam-font-family {
+  /*
+      If you'd like to use Roboto, visit:
+      https://fonts.google.com/specimen/Roboto?selection.family=Roboto
+    */
+  font-family: 'Roboto', sans-serif;
+}
+
+.beam-title {
+  font-size: 40px;
+  line-height: 1.1em;
+  font-weight: 100;
+  margin-bottom: 16px;
+}
+
+.beam-label {
+  font-size: 16;
+  font-weight: bolder;
+}
+
+.beam-text {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+body {
+  background: url(assets/images/bg.jpg);
+}
+
+.panel-success {
+  background-color: $beam-brush-chartreuse;
+  color: black;
+}
+
+.panel-danger {
+  background-color: $beam-brush-pink;
+  color: black;
+}

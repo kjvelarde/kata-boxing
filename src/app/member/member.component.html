@@ -1,0 +1,45 @@
+<h5 class="beam-title">Member Details</h5>
+<div *ngIf="memberInsurance$ | async as mi" class="row">
+  <div class="col-lg-6 pt-4">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title> {{ mi.name }}</mat-card-title>
+        <mat-card-subtitle>NAME</mat-card-subtitle>
+      </mat-card-header>
+      <hr />
+      <mat-card-content class="preferences">
+        <!-- preferences -->
+
+        <div class="row">
+          <div class="col-lg-3 beam-label">Brush Color</div>
+          <div class="col-lg-9 beam-text">
+            <span
+              class="brush-color-box"
+              [ngClass]="'beam-brush-' + mi.preference?.brush_color"
+            ></span>
+            {{ mi.preference?.brush_color }}
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 beam-label">Motor Speed</div>
+          <div class="col-lg-9 beam-text">
+            {{ mi.preference?.motor_speed }}
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 beam-label">Auto Off</div>
+          <div class="col-lg-9 beam-text">
+            {{ mi.preference?.auto_off ? 'Yes' : 'No' }}
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <!-- shipping -->
+  <div class="col-lg-6 pt-4">
+    <app-member-address [memberInsurance]="mi"></app-member-address>
+  </div>
+</div>

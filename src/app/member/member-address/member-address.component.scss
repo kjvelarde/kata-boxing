@@ -1,0 +1,12 @@
+@import '../../../assets/base/variables';
+
+:host() {
+  .btn-edit {
+    background: $beam-brush-blue;
+  }
+
+  .btn-cancel {
+    background: $beam-brush-pink;
+    margin-right: 2em;
+  }
+}
